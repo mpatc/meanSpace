@@ -1,4 +1,4 @@
-[![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
+[![ourSpace Logo](http://s32.postimg.org/m9g0nbdmt/logo.png)](http://mean-exemplary-electronarcosis.mybluemix.net/)
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/meanjs/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/meanjs/mean.svg?branch=master)](https://travis-ci.org/meanjs/mean)
@@ -18,7 +18,7 @@ Before you begin we recommend you read about the basic building blocks that asse
 ## Prerequisites
 Make sure you have installed all of the following prerequisites on your development machine:
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
-  * Node v5 IS NOT SUPPORTED AT THIS TIME! 
+  * Node v5 IS NOT SUPPORTED AT THIS TIME!
 * MongoDB - [Download & Install MongoDB](http://www.mongodb.org/downloads), and make sure it's running on the default port (27017).
 * Ruby - [Download & Install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 * Bower - You're going to use the [Bower Package Manager](http://bower.io/) to manage your front-end packages. Make sure you've installed Node.js and npm first, then install bower globally using npm:
@@ -176,7 +176,7 @@ or
 $ gulp default
 ```
 
-The server is now running on http://localhost:3000 if you are using the default settings. 
+The server is now running on http://localhost:3000 if you are using the default settings.
 
 ### Running Gulp Development Environment
 
@@ -276,7 +276,7 @@ for hosting applications in the cloud.  After you have an account follow the bel
 * Deploy MEANJS to Cloud Foundry
   * `$ cf push`
 
-After `cf push` completes you will see the URL to your running MEANJS application 
+After `cf push` completes you will see the URL to your running MEANJS application
 (your URL will be different).
 
     requested state: started
