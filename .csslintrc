@@ -4,6 +4,7 @@
   "box-sizing": false,
   "floats": false,
   "font-sizes": false,
+  "vendor-prefix": false,
   "important": false,
   "known-properties": false,
   "overqualified-elements": false,
