@@ -13,3 +13,6 @@
   width: 28px;
   border-radius: 50%;
 }
+.panel-body {
+  background-color: #EAE5FF;
+}
