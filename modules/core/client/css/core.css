@@ -48,7 +48,7 @@ a:hover .header-profile-image {
     color: #FF008A;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #00CD2A;
+    color: rgb(95, 255, 95);
 }
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .active > a {
     background-image: linear-gradient(to bottom, #F16CC4 0%, #5A8249 100%);

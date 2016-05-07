@@ -16,6 +16,12 @@ var SecretspaceSchema = new Schema({
     required: 'Please fill Secretspace name',
     trim: true
   },
+  whisper: {
+    type: String,
+    default: '',
+    required: `Pssst! I can't here you!`,
+    trim: true
+  },
   created: {
     type: Date,
     default: Date.now
