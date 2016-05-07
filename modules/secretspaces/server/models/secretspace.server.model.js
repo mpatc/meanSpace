@@ -19,7 +19,7 @@ var SecretspaceSchema = new Schema({
   whisper: {
     type: String,
     default: '',
-    required: `Pssst! I can't here you!`,
+    required: 'Pssst! Whisper us a secret!',
     trim: true
   },
   created: {
