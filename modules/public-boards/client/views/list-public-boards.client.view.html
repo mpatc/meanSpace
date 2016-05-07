@@ -1,0 +1,22 @@
+<section>
+  <div class="page-header">
+    <h1>Public boards</h1>
+  </div>
+  <div class="list-group">
+    <a data-ng-repeat="public-board in vm.publicBoards"
+       data-ui-sref="publicBoards.view({ public-boardId: public-board._id })"
+       class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span data-ng-bind="publicBoard.created | date:'mediumDate'"></span>
+        by
+        <span data-ng-if="publicBoard.user" data-ng-bind="publicBoard.user.displayName"></span>
+        <span data-ng-if="!publicBoard.user">Deleted User</span>
+      </small>
+      <h4 class="list-group-item-heading" data-ng-bind="public-board.name"></h4>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="vm.publicBoards.$resolved && !vm.publicBoards.length">
+    No Public boards yet, why don't you <a data-ui-sref="publicBoards.create">create one</a>?
+  </div>
+</section>

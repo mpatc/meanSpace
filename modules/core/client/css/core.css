@@ -35,3 +35,18 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
   display: inline;
 }
+.btn-primary {
+  background-image: linear-gradient(to bottom, #B73388 0%, #268888 100%);
+}
+.btn-success {
+  background-image: linear-gradient(to bottom, #76E076 0%, #417796 100%);
+}
+.navbar-inverse {
+  background-image: linear-gradient(to bottom, #33BD57 0%, #D200A5 100%);
+}
+.navbar-inverse .navbar-brand {
+    color: #FF008A;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #00CD2A;
+}
