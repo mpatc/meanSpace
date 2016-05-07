@@ -22,6 +22,11 @@ var SecretspaceSchema = new Schema({
     required: 'Pssst! Whisper us a secret!',
     trim: true
   },
+  friends: {
+  type: String,
+  default: '',
+  trim: true
+},
   created: {
     type: Date,
     default: Date.now
