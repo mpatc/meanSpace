@@ -65,3 +65,7 @@ a:hover .header-profile-image {
     background-color: #4E9D64;
     background-image: none;
 }
+b, strong {
+    font-weight: bold;
+    color: magenta;
+}

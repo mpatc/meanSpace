@@ -105,10 +105,10 @@ var UserSchema = new Schema({
  */
 UserSchema.pre('save', function (next) {
   if (this.password && this.isModified('password')) {
-    console.time('startHash')
+    console.time('startHash');
     this.salt = crypto.randomBytes(16).toString('base64');
     this.password = this.hashPassword(this.password);
-    console.timeEnd('startHash')
+    console.timeEnd('startHash');
   }
 
   next();

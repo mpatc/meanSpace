@@ -22,5 +22,16 @@
       <span data-ng-if="!vm.publicspace.user">Deleted User</span>
     </em>
   </small>
-  <p class="lead" data-ng-bind="vm.publicspace.content"></p>
+  <p class="lead" data-ng-bind="vm.publicspace.name"></p>
+  <p class="lead" data-ng-bind="vm.publicspace.shout"></p>
+  <span> Likes: <p class="lead" data-ng-bind="vm.publicspace.liked"></p></span>
+  <a class="btn btn-success" data-ng-click="vm.publicspace.liked = vm.publicspace.liked + 1">
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+  </a>
+  <a class="btn btn-warning" data-ng-click="vm.publicspace.liked = vm.publicspace.liked - 1">
+    <i class="glyphicon glyphicon-thumbs-down"></i>
+  </a>
+  <div class="form-group">
+    <button type="submit" class="btn btn-default">{{vm.publicspace._id ? 'Update' : 'Create'}}</button>
+  </div>
 </section>

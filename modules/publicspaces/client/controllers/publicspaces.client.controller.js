@@ -24,6 +24,19 @@
         vm.publicspace.$remove($state.go('publicspaces.list'));
       }
     }
+    function addLike() {
+      console.log('like called:', vm.publicspace.liked);
+      vm.publicspace.liked = vm.publicspace.liked + 1;
+      vm.publicspace.$update(successCallback, errorCallback);
+      function successCallback(res) {
+        $state.go('publicspaces.view', {
+          publicspaceId: res._id
+        });
+      }
+      function errorCallback(res) {
+        vm.error = res.data.message;
+      }
+    }
 
     // Save Publicspace
     function save(isValid) {

@@ -44,6 +44,7 @@ module.exports.start = function start(callback) {
       console.log('--');
       console.log(chalk.green(config.app.title));
       console.log(chalk.green('Environment:\t\t\t' + process.env.NODE_ENV));
+      console.log(chalk.green('FacebookID:\t\t\t\t' + process.env.FACEBOOK_ID));
       console.log(chalk.green('Port:\t\t\t\t' + config.port));
       console.log(chalk.green('Database:\t\t\t\t' + config.db.uri));
       if (process.env.NODE_ENV === 'secure') {
