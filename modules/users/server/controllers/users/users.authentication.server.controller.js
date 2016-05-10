@@ -118,8 +118,8 @@ exports.oauthCallback = function (strategy) {
         if (err) {
           return res.redirect('/authentication/signin');
         }
-
-        return res.redirect(redirectURL || sessionRedirectURL || '/');
+        // return res.redirect('/');
+        return res.redirect(sessionRedirectURL || '/');
       });
     })(req, res, next);
   };
@@ -169,11 +169,11 @@ exports.saveOAuthUserProfile = function (req, providerUserProfile, done) {
 
             // And save the user
             user.save(function (err) {
-              return done(err, user);
+              return done(null, user);
             });
           });
         } else {
-          return done(err, user);
+          return done(null, user);
         }
       }
     });
@@ -195,7 +195,7 @@ exports.saveOAuthUserProfile = function (req, providerUserProfile, done) {
 
       // And save the user
       user.save(function (err) {
-        return done(err, user, '/settings/accounts');
+        return done(null, user, '/settings/accounts');
       });
     } else {
       return done(new Error('User is already connected using this provider'), user);

@@ -43,7 +43,7 @@ module.exports = {
   twitter: {
     clientID: process.env.TWITTER_KEY || 'cTQPELL4DG6m89nEzT7aYUH7a',
     clientSecret: process.env.TWITTER_SECRET || 'AU6v5FXogIquK58Iowpe9ISrqpJq0I6mMpcIqUOkrZiY5ddRmS',
-    callbackURL: '/api/auth/twitter/callback'
+    callbackURL: '/api/auth/twitter/',
   },
   google: {
     clientID: process.env.GOOGLE_ID || '1028136937411-e3gvc32gkc6rvi09avqjdq91n36au0oh.apps.googleusercontent.com',
