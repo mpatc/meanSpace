@@ -1,12 +1,11 @@
 'use strict';
 
 module.exports = {
-  sessionSecret: process.env.SESSION_SECRET || 'super amazing secretsadfasdf',
-  secure: {
-    ssl: true,
-    privateKey: './config/sslcerts/key.pem',
-    certificate: './config/sslcerts/cert.pem'
-  },
+  // secure: {
+  //   ssl: true,
+  //   privateKey: './config/sslcerts/key.pem',
+  //   certificate: './config/sslcerts/cert.pem'
+  // },
   port: process.env.PORT || 8443,
   db: {
     uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
@@ -37,18 +36,18 @@ module.exports = {
     }
   },
   facebook: {
-    clientID: process.env.FACEBOOK_ID || '1559221604373931',
-    clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
+    clientID: process.env.FACEBOOK_ID || '225228177856507',
+    clientSecret: process.env.FACEBOOK_SECRET || '3055a7c4ddf90fe591fe9088a0447cd5',
     callbackURL: '/api/auth/facebook/callback'
   },
   twitter: {
-    clientID: process.env.TWITTER_KEY || 'CONSUMER_KEY',
-    clientSecret: process.env.TWITTER_SECRET || 'CONSUMER_SECRET',
+    clientID: process.env.TWITTER_KEY || 'cTQPELL4DG6m89nEzT7aYUH7a',
+    clientSecret: process.env.TWITTER_SECRET || 'AU6v5FXogIquK58Iowpe9ISrqpJq0I6mMpcIqUOkrZiY5ddRmS',
     callbackURL: '/api/auth/twitter/callback'
   },
   google: {
-    clientID: process.env.GOOGLE_ID || 'APP_ID',
-    clientSecret: process.env.GOOGLE_SECRET || 'APP_SECRET',
+    clientID: process.env.GOOGLE_ID || '1028136937411-e3gvc32gkc6rvi09avqjdq91n36au0oh.apps.googleusercontent.com',
+    clientSecret: process.env.GOOGLE_SECRET || 'S2KhS1ax7S3WCUi_wy2Oqd7C',
     callbackURL: '/api/auth/google/callback'
   },
   linkedin: {
@@ -57,8 +56,8 @@ module.exports = {
     callbackURL: '/api/auth/linkedin/callback'
   },
   github: {
-    clientID: process.env.GITHUB_ID || 'APP_ID',
-    clientSecret: process.env.GITHUB_SECRET || 'APP_SECRET',
+    clientID: process.env.GITHUB_ID || '4c0cdc86e1bbf134929c',
+    clientSecret: process.env.GITHUB_SECRET || '564f850ddfeb7bde9f1b97187dc0b6fd372bd632',
     callbackURL: '/api/auth/github/callback'
   },
   paypal: {

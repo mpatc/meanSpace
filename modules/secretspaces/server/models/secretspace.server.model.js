@@ -25,9 +25,9 @@ var SecretspaceSchema = new Schema({
     trim: true
   },
   crypto: {
-  type: String,
-  default: listHash
-},
+    type: String,
+    default: listHash
+  },
   friends: {
     type: String,
     default: '',
