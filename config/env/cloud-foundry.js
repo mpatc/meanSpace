@@ -69,7 +69,7 @@ module.exports = {
       service: getCred('mean-mail', 'service') || 'gmail',
       auth: {
         user: getCred('mean-mail', 'username') || 'matthewpclancy',
-        pass: getCred('mean-mail', 'password') || 'MAILER_PASSWORD'
+        pass: getCred('mean-mail', 'password') || 'nlskrubcovtgwtjh'
       }
     }
   },
