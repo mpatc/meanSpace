@@ -69,3 +69,6 @@ b, strong {
     font-weight: bold;
     color: magenta;
 }
+body {
+    background-image: linear-gradient(to bottom, #5A8249 0%, #F16CC4 100%);
+}

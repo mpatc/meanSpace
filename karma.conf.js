@@ -64,7 +64,7 @@ module.exports = function (karmaConfig) {
     port: 9876,
 
     // Enable / disable colors in the output (reporters and logs)
-    colors: true,
+    colors: false,
 
     // Level of logging
     // Possible values: karmaConfig.LOG_DISABLE || karmaConfig.LOG_ERROR || karmaConfig.LOG_WARN || karmaConfig.LOG_INFO || karmaConfig.LOG_DEBUG

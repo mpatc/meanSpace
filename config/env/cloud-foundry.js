@@ -64,11 +64,11 @@ module.exports = {
     sandbox: false
   },
   mailer: {
-    from: getCred('mean-mail', 'from') || 'MAILER_FROM',
+    from: getCred('mean-mail', 'from') || 'matthewpclancy@gmail.com',
     options: {
-      service: getCred('mean-mail', 'service') || 'MAILER_SERVICE_PROVIDER',
+      service: getCred('mean-mail', 'service') || 'gmail',
       auth: {
-        user: getCred('mean-mail', 'username') || 'MAILER_EMAIL_ID',
+        user: getCred('mean-mail', 'username') || 'matthewpclancy',
         pass: getCred('mean-mail', 'password') || 'MAILER_PASSWORD'
       }
     }
